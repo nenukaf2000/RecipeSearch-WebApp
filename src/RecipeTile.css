@@ -1,0 +1,21 @@
+/* Styling images */
+
+.recipeTile_img{
+    height: 200px;
+    width: 200px;
+    /* This will scale up smaller images to 200px */
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Styling tile cursor */
+.recipeTiles{
+    cursor: pointer;
+}
+
+.recipeTile_label{
+    /* This will take space on max width */
+    max-width: 200px;
+    text-align: center;
+    margin: 12px 0px;
+}

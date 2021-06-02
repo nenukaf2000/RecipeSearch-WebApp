@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+.app{
+    display: flex;
+    /* By default, flex comes as horizontal, we can make it vertical by flex direction */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling searchbar */
+.app_searchform{
+    margin-top: 18px
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* search button */
+.app_input{
+    padding: 6px 16px;
+    min-width: 200px;
+    max-width: 100vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app_submit{
+    /* Search box and button are same size */
+    padding: 6px 16px;
+    font-size: 15px;
+    /* To add some space between 2 */
+    margin-left: 5px;
+    /* BG - blue, with 4px border and white text color */
+    background-color: #02aff0;
+    border: 2px solid #0fb3ee;
+    border-radius: 4px;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app_submit:hover{
+    /* Search box and button are same size */
+    padding: 6px 16px;
+    font-size: 15px;
+    /* To add some space between 2 */
+    margin-left: 5px;
+    /* BG - blue, with 4px border and white text color */
+    background-color: #ffffff;
+    border: 2px solid #0fb3ee;
+    border-radius: 4px;
+    color: #0fb3ee;
+    cursor: pointer;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* //To make grid */
+.app_recipies{
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 230px 230px;
+    /* To align items for a same line */
+    align-items: baseline;
+}
+
+/* User preference menu */
+.app_healthLabels{
+    padding: 7px 8px;
+    /* To add some space between search button and menu */
+    margin-left:  6px;
+    border-radius: 4px;
+
+
 }
